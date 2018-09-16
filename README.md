@@ -6,7 +6,7 @@ After specifying grid size 'N' and total number of generations 'T' each generati
 on line 53 of GoL.py. A user can demo the code within the supplied Jupyter Notebook and create an animated .gif of all
 generations stitched together. 
 
-Example animated .gif output with N=85 and T=250:
+Example animated .gif output with N=250 and T=250:
 
 ![title](movie.gif)
 
