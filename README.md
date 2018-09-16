@@ -1,13 +1,12 @@
 # Game of Life (GoL)
-Python implementation of mathematician John Conway's Game of Life. 
-(https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
+Python implementation of John Conway's Game of Life (https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 
 After specifying number of initialized live cells 'N' and total number of generations 'T' each generation is saved as a 
 .png file to current directory. Frequency of saved generations can be edited by adjusting the 'write_frequency' variable 
 on line 53 of GoL.py. A user can demo the code within the supplied Jupyter Notebook and create an animated .gif of all
 generations stitched together. 
 
-Example of output animated .gif with N=85 and T=250:
+Example animated .gif output with N=85 and T=250:
 
 ![title](movie.gif)
 
