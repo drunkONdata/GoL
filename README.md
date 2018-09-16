@@ -1,9 +1,9 @@
 # Game of Life (GoL)
 Python implementation of John Conway's Game of Life (https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 
-After specifying grid size 'N' and total number of generations 'T' each generation is saved at a certain frequency as determined 
-by adjusting 'WF' or write frequency value. The generation is saved as a .png file to current directory. A user can demo the code 
-within supplied Jupyter Notebook and create an animated .gif of all generations stitched together. 
+After specifying grid size 'N' and total number of generations 'T' each generation is saved at a certain frequency as 
+determined by adjusting 'WF' or write frequency value. The generation is saved as a .png file to current directory. A 
+user can demo the code within supplied Jupyter Notebook and create an animated .gif of all generations stitched together. 
 
 Example animated .gif output with N=250, T=250 & WF=2:
 
