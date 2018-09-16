@@ -1,6 +1,6 @@
 '''
 Game of Life Code
-Modified version of code from https://github.com/ctjacobs
+Modified version from ctjacob's GoL
 '''
 
 import numpy as np
@@ -9,11 +9,12 @@ import random
 
 class GoL:
 
-   def __init__(self, N=100, T=200):
+   def __init__(self, N=100, T=200, WF=5):
       self.N = N
       self.old_grid = np.zeros(N*N, dtype='i').reshape(N,N)
       self.new_grid = np.zeros(N*N, dtype='i').reshape(N,N)
       self.T = T # number of generations
+      self.WF = WF # write frequency = how often to save generations
 
       # Initialization of random grid
       for i in range(0, self.N):
@@ -50,7 +51,6 @@ class GoL:
       pl.savefig("generation0.png")
 
       t = 1 # Current generation
-      write_frequency = 1 # Frequency of saved generations
       while t <= self.T:
          if t%10==0:
              # Only print update at tenth generations
@@ -70,7 +70,7 @@ class GoL:
                   self.new_grid[i][j] = 1 # Alive from reproduction
 
          # Output the new grid configuration
-         if(t % write_frequency == 0):
+         if(t % self.WF == 0):
             pl.pcolormesh(self.new_grid)
             pl.savefig('generation%d.png' % t)
 
@@ -81,5 +81,5 @@ class GoL:
          t += 1
 
 if(__name__ == "__main__"):
-   game = GoL(N = 100, T = 200)
+   game = GoL(N = 100, T = 200, WF = 5)
    game.play()
