@@ -1,8 +1,3 @@
-'''
-Game of Life Code
-Modified version from ctjacob's GoL
-'''
-
 import numpy as np
 import pylab as pl
 import random
